@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 
 class CustomListViewDetailsBooks extends StatelessWidget {
   const CustomListViewDetailsBooks({super.key});
-  
 
   @override
   Widget build(BuildContext context) {

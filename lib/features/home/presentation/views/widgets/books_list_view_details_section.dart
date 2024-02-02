@@ -8,21 +8,20 @@ class BooksListViewDetailsSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Column(
       children: [
-          Align(
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    "You can also like : ",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                CustomListViewDetailsBooks(),
-                
+        Align(
+          alignment: Alignment.centerLeft,
+          child: Text(
+            "You can also like : ",
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 20,
+            ),
+          ),
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        CustomListViewDetailsBooks(),
       ],
     );
   }

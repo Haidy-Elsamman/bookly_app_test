@@ -5,33 +5,33 @@ import 'package:bookly_app_test/features/splash/presentation/views/splash_screen
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-abstract class AppRouter{
+abstract class AppRouter {
   static final GoRouter router = GoRouter(
-  routes: <RouteBase>[
-    GoRoute(
-      path: '/',
-      builder: (BuildContext context, GoRouterState state) {
-        return const SplashScreen();
-      },
-    ),
-    GoRoute(
-      path: '/homeScreen',
-      builder: (BuildContext context, GoRouterState state) {
-        return const HomeScreen();
-      },
-    ),
-     GoRoute(
-      path: '/bookDetailsScreen',
-      builder: (BuildContext context, GoRouterState state) {
-        return const BookDetailsScreen();
-      },
-    ),
-    GoRoute(
-      path: '/searchScreen',
-      builder: (BuildContext context, GoRouterState state) {
-        return const SearchScreen();
-      },
-    ),
-  ],
-);
+    routes: <RouteBase>[
+      GoRoute(
+        path: '/',
+        builder: (BuildContext context, GoRouterState state) {
+          return const SplashScreen();
+        },
+      ),
+      GoRoute(
+        path: '/homeScreen',
+        builder: (BuildContext context, GoRouterState state) {
+          return const HomeScreen();
+        },
+      ),
+      GoRoute(
+        path: '/bookDetailsScreen',
+        builder: (BuildContext context, GoRouterState state) {
+          return const BookDetailsScreen();
+        },
+      ),
+      GoRoute(
+        path: '/searchScreen',
+        builder: (BuildContext context, GoRouterState state) {
+          return const SearchScreen();
+        },
+      ),
+    ],
+  );
 }

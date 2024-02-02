@@ -66,7 +66,6 @@ class _SplashBodyState extends State<SplashBody>
     Future.delayed(
       const Duration(seconds: 1),
       () {
-       
         GoRouter.of(context).push('/homeScreen');
       },
     );
