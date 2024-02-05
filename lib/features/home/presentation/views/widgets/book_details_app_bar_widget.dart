@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:go_router/go_router.dart';
 
 class BookDetailsAppBarWidget extends StatelessWidget {
   const BookDetailsAppBarWidget({super.key});
@@ -9,7 +10,9 @@ class BookDetailsAppBarWidget extends StatelessWidget {
     return Row(
       children: [
         IconButton(
-          onPressed: () {},
+          onPressed: () {
+            GoRouter.of(context).push('/homeScreen');
+          },
           icon: const Icon(
             FontAwesomeIcons.x,
           ),
