@@ -12,6 +12,6 @@ final class FeaturedBooksFailure extends FeaturedBooksState {
 }
 
 final class FeaturedBooksSuccess extends FeaturedBooksState {
-  List<BookEntity> books;
-  FeaturedBooksSuccess({required this.books});
+   List<BookEntity> featuredBooks;
+  FeaturedBooksSuccess({required this.featuredBooks});
 }
